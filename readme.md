@@ -1,4 +1,6 @@
-# Spring PetClinic Sample Application
+# Spring PetClinic Sample Application with Restler
+
+This repository demonstrates how to write integration tests for existing application using <a href="https://github.com/execlsior-oss/restler">Restler</a>
 
 
 ## Understanding the Spring Petclinic application with a few diagrams

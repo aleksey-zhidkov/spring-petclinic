@@ -15,9 +15,12 @@
  */
 package org.springframework.samples.petclinic.web;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.samples.petclinic.model.Vet;
 import org.springframework.samples.petclinic.model.Vets;
 import org.springframework.samples.petclinic.service.ClinicService;
 import org.springframework.stereotype.Controller;
@@ -63,4 +66,10 @@ public class VetController {
     }
 
 
+    @RequestMapping("/vetsGeneric.json")
+    public
+    @ResponseBody
+    List<Vet> showResourcesVetListGeneric() {
+        return new ArrayList<>(clinicService.findVets());
+    }
 }
